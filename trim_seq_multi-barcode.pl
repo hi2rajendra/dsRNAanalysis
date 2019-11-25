@@ -7,21 +7,7 @@
 #it will ask for the folder containing fasta files, give it and hit enter
 my $VERSION = "2.0 [to process a folder of Multi-Fasta files], all barcodes";
 my $AUTHOR = "Rajendra K. Labala"; my $DATE1 = "Mar/2017";
-###############################################START###################################RAJ################
-print "\nEnter Folder Name Containing FASTA Sequence Files:";
-$dir=<>;
-chomp($dir);
-opendir(DIR, $dir)or die "Cannot open $dir: $!";
-@FILES=readdir(DIR);
-closedir(DIR);
-shift(@FILES);
-shift(@FILES);
-$no_file=(@FILES);
-
-print "\n********************************START********************************\n";
-
-#open(file4,">seq_count.tab");
-#print file4 "File_Name\tNo.ofSeqs_trimmed\tNo.Seqs_Not_trimmed\n";
+#Barcodes
 #1)	THa CACATCACGATC
 #2)	LPz  CACCGATGTATC
 #3)	LPt  CACTTAGGCATC
@@ -34,7 +20,20 @@ print "\n********************************START********************************\n
 #10)	LAt  CACTAGCTTATC
 #11)	BSt   CACGGCTACATC
 #12)	SCv  CACCTTGTAATC
+###############################################START###################################RAJ################
+print "\nEnter Folder Name Containing FASTA Sequence Files:";
+$dir=<>;
+chomp($dir);
+opendir(DIR, $dir)or die "Cannot open $dir: $!";
+@FILES=readdir(DIR);
+closedir(DIR);
+shift(@FILES);
+shift(@FILES);
+$no_file=(@FILES);
 
+print "\n********************************START********************************\n";
+#open(file4,">seq_count.tab");
+#print file4 "File_Name\tNo.ofSeqs_trimmed\tNo.Seqs_Not_trimmed\n";
 foreach $file(@FILES)
 # Open each FASTA file #
 {
@@ -60,10 +59,8 @@ foreach $file(@FILES)
         print OUT "$dna\n"; # will print the unmateched seq 
         #print ($dna =~ m/.*ZZ[ATGC]ZZ(.*?)XX[atgc]XX.*/i);
       } 
-          
     $dna = ""; # Resetting the sequence holder
     $header = $_; # getting the fasta desc line
-    
     }
     else {
         $dna .= $_; # if it is not a fasta desc line, add to your dna sequence.
@@ -86,7 +83,6 @@ foreach $file(@FILES)
   print "Number of sequences not-trimmed: $r3\n";
   #print file4 "\n$file\t$r1\t$r3";
 }
-
 print "\n*********************************END**********************************\n";
 print "\nTotal Number of Files Processed: $no_file\n";
 print "\nScript Details\n===============\nAuthor: $AUTHOR\nVersion: $VERSION\nDate Created: $DATE1\n\n";
