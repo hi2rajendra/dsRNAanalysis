@@ -14,4 +14,4 @@ while (<>) {
   print ">$_" if ((length $seq) > 1);
 }
 print "\n*********************************END**********************************\n";
-print "\nScript Details\n===============\nAuthor: $AUTHOR\nVersion: $VERSION\nDate Created: $DATE1\n\n";
+print "\nScript Details\n===============\nAuthor: $AUTHOR\nVersion: $VERSION\nDate Created: $DATE1\n";
