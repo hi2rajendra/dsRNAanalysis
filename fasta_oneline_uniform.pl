@@ -6,7 +6,6 @@ my $VERSION = "1.0 [prepares fasta file for further analysis]";
 my $AUTHOR = "Rajendra K. Labala"; my $DATE1 = "April/2014";
 ###############################################START###################################RAJ################
 use strict;
-
 my $input_fasta=$ARGV[0];
 open(IN,"<$input_fasta") || die ("Error opening $input_fasta $!");
 my $line; 
