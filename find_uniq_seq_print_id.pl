@@ -21,8 +21,6 @@ my $VERSION = "6.3 [modified from match_seq]";
 my $AUTHOR = "Rajendra K. Labala"; my $DATE1 = "July/2017";
 ###############################################START###################################RAJ################
 $datestring1 = localtime();
-my $VERSION = "1.0"; my $AUTHOR = "Rajendra K. Labala"; my $DATE1 = "21/Feb/2018";
-
 print "Enter name of file containing merged unique sequences (e.g. all_merged_unique.txt):";
 chomp($idf=<>);
 open(file1,"$idf") || die "could not open file $idf\n";
