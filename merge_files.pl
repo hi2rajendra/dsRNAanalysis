@@ -8,12 +8,8 @@ my $AUTHOR = "Rajendra K. Labala"; my $DATE1 = "May/2017";
 ###############################################START###################################RAJ################
 use strict;
 use warnings;
-
 my $out_file = pop @ARGV; #last element of an array 
-my @in_files = @ARGV;
-
-die "Usage: $0 in_file1 in_file2 in_file3 in_file4 ... out_merged_file \n        (last name will be output file name) \n" if not @in_files;
-
+my @in_files = @ARGV; die "Check Usage\n" if not @in_files;
 open my $out, '>>', $out_file or die "Could not open '$out_file' for appending\n"; 
 foreach my $file (@in_files) {
     if (open my $in, '<', $file) {
@@ -26,7 +22,6 @@ foreach my $file (@in_files) {
     }
 }
 close $out;
- 
 print "\nMerging done and saved to: $out_file\n";
 print "\n*********************************END**********************************\n";
 print "\nScript Details\n===============\nAuthor: $AUTHOR\nVersion: $VERSION\nDate Created: $DATE1\n\n";
