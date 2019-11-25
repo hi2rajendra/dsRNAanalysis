@@ -48,10 +48,8 @@ foreach $file(@FILES)
         print OUT "$dna\n"; # will print the unmateched seq 
         #print ($dna =~ m/.*ZZ[ATGC]ZZ(.*?)XX[atgc]XX.*/i);
       } 
-          
     $dna = ""; # Resetting the sequence holder
     $header = $_; # getting the fasta desc line
-    
     }
     else {
         $dna .= $_; # if it is not a fasta desc line, add to your dna sequence.
@@ -74,7 +72,6 @@ foreach $file(@FILES)
   print "Number of sequences not-trimmed: $r3\n";
   print file4 "\n$file\t$r1\t$r3";
 }
-
 print "\n*********************************END**********************************\n";
 print "\nTotal Number of Files Processed: $no_file\n";
 print "\nScript Details\n===============\nAuthor: $AUTHOR\nVersion: $VERSION\nDate Created: $DATE1\n\n";
