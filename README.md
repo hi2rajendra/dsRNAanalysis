@@ -1,7 +1,7 @@
 # dsRNAanalysis
 dsRNA NGS data processing and analysis for 12 Lactic Acid Bacteria (LAB) species
 
-QIIME 1.9, Excel, R, custom Perl and Shell scripts were used for the processing and analysis.
+QIIME 1.9, Excel, and custom Perl scripts were used for the processing and analysis.
 Steps 1 to 11 are for individual species file processing
 Steps 12 to 17 are to generate matrix of similar sequences
 
@@ -20,9 +20,8 @@ Steps 12 to 17 are to generate matrix of similar sequences
 12. Perl (merge_files.pl): Merge all 12 fasta files
 13. Perl (remove_duplicate_seqs.pl): Remove duplicate sequences
 14. Perl (fasta_oneline_uniform.pl): Make one line fasta sequence for table generation
-15. Excel: (step-11-making match_ready) Prepare the merged file as well as all 12 species files for matching and create text files for each
+15. Excel: Prepare the merged file as well as all 12 species files for matching and create text files for each
 16. Perl (find_uniq_seq_print_id.pl): Find matching unique sequence for each species with the merged file and print their IDs in a excel file
 17. Excel: Make a matrix of relative abundance score belonging to each sequence
 
 Take the final generated matrix for further analysis
-
