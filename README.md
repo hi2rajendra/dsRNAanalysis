@@ -25,3 +25,7 @@ Steps 12 to 17 are to generate matrix of similar sequences
 17. Excel: Make a matrix of relative abundance score belonging to each sequence
 
 Take the final generated matrix for further analysis
+
+Cite:
+
+Imrat, Labala RK, Velhal S, Bhagat S, Patel V, & Jeyaram K. (2020). Small double-stranded RNA with anti-HIV activity abundantly produced by Bacillus subtilis MTCC5480 isolated from fermented soybean. International Journal of Biological Macromolecules. 161, 828-835, DOI: https://doi.org/10.1016/j.ijbiomac.2020.06.112.
