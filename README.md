@@ -1,5 +1,7 @@
 # dsRNAanalysis
-dsRNA NGS data processing and analysis for 12 Lactic Acid Bacteria (LAB) species
+Diversity of small non-coding double stranded RNA (dsRNA) produced by food fermenting for 12 food fermenting Lactic Acid Bacteria (LAB) species.
+
+NGS data processing and analysis: 
 
 QIIME 1.9, Excel, and custom Perl scripts were used for the processing and analysis.
 Steps 1 to 11 are for individual species file processing
