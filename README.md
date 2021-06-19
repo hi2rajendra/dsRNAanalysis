@@ -1,7 +1,6 @@
-# dsRNAanalysis
-Diversity of small non-coding double stranded RNA (dsRNA) produced by 12 food fermenting Lactic Acid Bacteria (LAB) species.
+# dsRNAanalysis - Diversity of small non-coding double stranded RNA (dsRNA) produced by 12 food fermenting Lactic Acid Bacteria (LAB).
 
-NGS data processing and analysis: 
+### NGS data processing and analysis: 
 
 QIIME 1.9, MS Excel, and custom Perl scripts were used for the processing and analysis.
 Steps 1 to 11 are for individual species file processing.
@@ -28,6 +27,6 @@ Steps 12 to 17 are to generate matrix of similar sequences.
 
 Take the final generated matrix for further downstream analysis.
 
-Citation:
+### Citation:
 
 Imrat, Labala RK, Velhal S, Bhagat S, Patel V, & Jeyaram K. (2020). Small double-stranded RNA with anti-HIV activity abundantly produced by Bacillus subtilis MTCC5480 isolated from fermented soybean. International Journal of Biological Macromolecules. 161, 828-835, DOI: https://doi.org/10.1016/j.ijbiomac.2020.06.112.
